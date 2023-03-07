@@ -1,0 +1,10 @@
+{
+  "name": "timeout",
+  "version": "0.1.0",
+  "description": "Expose an endpoint that sleeps for very long so request timeout",
+  "main": "index.js",
+  "repository": "https://github.com/qrafttech/timeout",
+  "author": "Nicolas Rouanne",
+  "license": "MIT",
+  "private": false
+}
