@@ -2,14 +2,14 @@
   "name": "timeout",
   "version": "0.1.0",
   "description": "Expose an endpoint that sleeps for very long so request timeout",
-  "main": "lib/app.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/qrafttech/timeout",
   "author": "Nicolas Rouanne",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node lib/app.js",
-    "dev": "ts-node-dev app.ts",
+    "start": "node lib/index.js",
+    "dev": "ts-node-dev index.ts",
     "build": "tsc"
   },
   "dependencies": {
