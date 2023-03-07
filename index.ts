@@ -12,7 +12,7 @@ app.get("/", (request: Request, response: Response) => {
   });
 });
 
-app.get("/timeout/:delay", ({ params }: Request, response: Response) => {
+app.get("/timeout/:delay?", ({ params }: Request, response: Response) => {
   const delay = params.delay ? parseInt(params.delay as string) : 29;
   setTimeout(() => {
     response.json({
