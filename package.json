@@ -7,6 +7,10 @@
   "author": "Nicolas Rouanne",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "ts-node app.ts",
+    "dev": "ts-node-dev app.ts"
+  },
   "dependencies": {
     "express": "^4.18.2"
   },
