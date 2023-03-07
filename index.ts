@@ -12,13 +12,13 @@ app.get("/", (request: Request, response: Response) => {
   });
 });
 
-app.get("/timeout", (request: Request, response: Response) => {
-  const delay = 1000 * 60; // 1 minute
+app.get("/timeout/:delay", ({ params }: Request, response: Response) => {
+  const delay = params.delay ? parseInt(params.delay as string) : 29;
   setTimeout(() => {
     response.json({
-      message: `You waited ${delay / 1000} seconds for this response.`,
+      message: `You waited ${delay} seconds for this response.`,
     });
-  }, delay);
+  }, delay * 1000);
 });
 
 const PORT = process.env.PORT || 5001;
